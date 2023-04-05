@@ -1,0 +1,8 @@
+<div>
+    <%= link(to: Routes.topic_path(@conn, :index), class: "btn-small waves-effect waves-light blue amber") do %>
+        <i class="material-icons">home</i>
+    <% end %>
+</div>
+<div>
+    <h3><%= @topic.title %></h3>
+</div>

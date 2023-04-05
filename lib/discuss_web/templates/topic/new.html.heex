@@ -1,3 +1,8 @@
+<div>
+    <%= link(to: Routes.topic_path(@conn, :index), class: "btn-small waves-effect waves-light blue amber") do %>
+        <i class="material-icons">home</i>
+    <% end %>
+</div>
 <%= form_for @changeset, Routes.topic_path(@conn, :create), fn f -> %>
     <div class="form-group">
         <%= text_input(f, :title, placeholder: "Title", class: "form-control") %>
