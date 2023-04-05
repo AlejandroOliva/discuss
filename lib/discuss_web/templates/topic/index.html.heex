@@ -8,7 +8,9 @@
             <%= link(to: Routes.topic_path(@conn, :edit, topic), class: "btn-small waves-effect waves-light yellow") do %>
                 <i class="material-icons">edit</i>
             <% end %>
-            <%# <%= link("Edit", to: Routes.topic_path(@conn, :edit, topic)) %>
+            <%= link(to: Routes.topic_path(@conn, :delete, topic), method: :delete, class: "btn-small waves-effect waves-light red") do %>
+                <i class="material-icons">delete</i>
+            <% end %>
         </div>
     </li>
     <% end %>
