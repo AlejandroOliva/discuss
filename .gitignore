@@ -32,3 +32,5 @@ discuss-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore secret files with API credentials
+/config/*.secret.exs
