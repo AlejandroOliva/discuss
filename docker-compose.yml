@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: discuss_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: discuss_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - discuss_postgres:/var/lib/postgresql/data
+    networks:
+      - discuss
+
+networks:
+  discuss:
+
+volumes:
+  discuss_postgres:
